@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_main_text"
+        android:text="Hello World"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modifier le texte"
+        android:id="@+id/bt_main_txtchange"
+        android:onClick="onMainClickManager"
+        android:layout_marginBottom="50dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_main_startTh"
+        android:text="Thread Go"
+        android:onClick="onMainClickManager"
+        android:layout_marginTop="50dp"/>
+
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pb_main_progressionTH"
+        android:max="100"
+        android:layout_margin="10dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"/>
+    <Button
+        android:id="@+id/bt_main_startAS"
+        android:onClick="onMainClickManager"
+        android:text= "AsyncTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:id="@+id/pb_main_progressionAS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:max= "100"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/bt_main_startTrHa"
+        android:onClick="onMainClickManager"
+        android:text="Thread + Handler"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:id="@+id/pb_main_progressionTrHa1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:visibility="gone"/>
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:id="@+id/pb_main_progressionTrHa2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:visibility="gone"/>
+
+</LinearLayout>
