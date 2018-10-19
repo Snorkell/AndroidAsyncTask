@@ -49,7 +49,7 @@ public class WriteTaskS7 {
                 Integer res = comS7.ConnectTo(parConnexion[0],
                         Integer.valueOf(parConnexion[1]), Integer.valueOf(parConnexion[2]));
                 while (isRunning.get() && (res.equals(0))) {
-                    Integer writePLC = comS7.WriteArea(S7.S7AreaDB, 20, 0, 1,motCommande);
+                    Integer writePLC = comS7.WriteArea(S7.S7AreaDB, 53, 0, 1,motCommande);
                     if(writePLC.equals(0)){
                         Log.i("ret Write", String.valueOf(res)+"****"+String.valueOf(writePLC));
                     }

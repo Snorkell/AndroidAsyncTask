@@ -126,10 +126,10 @@ public class MainActivity extends AppCompatActivity {
                 writeS7.setWriteBool(1, ch_main_activerouv.isChecked() ? 1 : 0);
                 break;
             case R.id.ch_main_activerfer:
-                writeS7.setWriteBool(2, ch_main_activerouv.isChecked() ? 1 : 0);
+                writeS7.setWriteBool(2, ch_main_activerfer.isChecked() ? 1 : 0);
                 break;
             case R.id.ch_main_aru:
-                writeS7.setWriteBool(4, ch_main_activerouv.isChecked() ? 1 : 0);
+                writeS7.setWriteBool(4, ch_main_aru.isChecked() ? 1 : 0);
                 break;
         }
     }
