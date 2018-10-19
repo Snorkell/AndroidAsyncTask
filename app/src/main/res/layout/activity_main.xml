@@ -88,12 +88,55 @@
         android:text="Ref plc"/>
 
     <ProgressBar
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@android:style/Widget.ProgressBar.Horizontal"
         android:id="@+id/pb_main_progressionS7"
         android:layout_margin="10sp"
         android:max="255"
         android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/ln_main_ecrireS7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <CheckBox
+            android:id="@+id/ch_main_aru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="#FFFF0000"
+            android:checked="false"
+            android:onClick="onMainClickManager"
+            android:text=" A.R.U. "
+            android:textColor="#FFFFFFFF"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/ch_main_activerouv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#FF00FF00"
+            android:checked="false"
+            android:onClick="onMainClickManager"
+            android:text=" /\\ Ouvrir /\\ " />
+
+        <CheckBox
+            android:id="@+id/ch_main_activerfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="#FF00FF00"
+            android:checked="false"
+            android:onClick="onMainClickManager"
+            android:text=" \\/ Fermer \\/ " />
+    </LinearLayout>
 
 </LinearLayout>
